@@ -14,6 +14,9 @@
 
 ACE (Agentic Context Engineering) is a framework that enables large language models to self-improve by treating contexts as evolving playbooks that accumulate, refine, and organize strategies through a modular process of generation, reflection, and curation. Unlike traditional approaches that suffer from **brevity bias** and **context collapse**, ACE introduces structured, incremental updates guided by a grow-and-refine principle, preserving detailed, domain-specific knowledge while remaining comprehensive and scalable throughout adaptation.
 
+## Latest News
+- **2025 Nov**: ACE [Paper](https://arxiv.org/abs/2510.04618) and Repo says "Hello World"!
+
 ### Key Features
 
 - 🔄 **Three-Role Agentic Architecture**: Generator, Reflector, and Curator work together to continuously improve contexts
@@ -26,24 +29,24 @@ ACE (Agentic Context Engineering) is a framework that enables large language mod
 - 📚 **Adding Dataset for Evaluation** [Link](tutorials/ExtendingDatasets.md)
 - ✨ **Extending ACE for Tool Calling** (Coming Soon) 
 
-## 📊 Performance
+### 📊 Performance
 
 ACE consistently outperforms strong baselines, achieving average gains of **+10.6%** on agent tasks and **+8.6%** on domain-specific benchmarks, across both offline and online adaptation settings.
 
-### Benchmarks
+#### Benchmarks
 
 | Task Category | Dataset | Improvement | Details |
 |---------------|---------|-------------|---------|
 | **Agent Tasks** | AppWorld | +10.6% | Matches top-ranked production-level agent (GPT-4.1) on average and surpasses it on harder test-challenge split, using smaller open-source model |
 | **Finance** | FiNER + XBRL Formula | +8.6% | Domain-specific reasoning with structured information extraction |
 
-### Efficiency Improvements
+#### Efficiency Improvements
 
 - **Offline (AppWorld)**: -82.3% latency and -75.1% rollouts vs GEPA
 - **Online (FiNER)**: -91.5% latency and -83.6% token cost vs Dynamic Cheatsheet
 
 
-### How It Works
+#### How It Works
 
 1. **Generator** produces reasoning trajectories for new queries, surfacing both effective strategies and recurring pitfalls
 2. **Reflector** separates evaluation and insight extraction from curation, improving context quality
@@ -290,18 +293,36 @@ class DataProcessor:
         # Calculate accuracy
         return sum(self.answer_is_correct(p, g) for p, g in zip(predictions, ground_truths)) / len(predictions)
 ```
-
 📖 **[Read the full extension guide →](EXTENDING_ACE.md)**
 
-The guide includes:
-- Step-by-step tutorial with complete code examples
-- Repository structure overview
-- Key implementation notes and best practices
-- Prompt customization guide
-- Reference to the `finance/` implementation
-- Troubleshooting tips and advanced topics
+
+## 🤝 Contributing
+We welcome contributions! Please follow these steps:
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 
+## 📚 Additional Resources
+- **Blog Posts**: 
+  - [Medium: Agentic Context Engineering](https://medium.com/@bingqian/agentic-context-engineering-teaching-language-models-to-learn-from-experience-706c31a872ca)
+  - [MarkTechPost Coverage](https://www.marktechpost.com/2025/10/10/agentic-context-engineering-ace-self-improving-llms-via-evolving-contexts-not-fine-tuning/)
+  - [InfoQ Article](https://www.infoq.com/news/2025/10/agentic-context-eng/)
+
+### 🙏 Acknowledgments
+This work builds upon insights from Dynamic Cheatsheet and incorporates ideas from the broader LLM agent and context optimization research community.
+
+### 📧 Contact
+For questions and feedback:
+- **Paper Authors**: See [arXiv paper](https://arxiv.org/abs/2510.04618) for author contact information
+- **Issues**: Please open an issue on GitHub
+- **Discussions**: Join the [GitHub Discussions](../../discussions)
+
+---
+
+<div align="center">
 
 ## 📝 Citation
 
@@ -318,40 +339,6 @@ If you use ACE in your research, please cite our paper:
       url={https://arxiv.org/abs/2510.04618}, 
 }
 ```
-
-
-## 🤝 Contributing [TODO]
-
-(Placeholder) We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📧 Contact
-
-For questions and feedback:
-
-- **Paper Authors**: See [arXiv paper](https://arxiv.org/abs/2510.04618) for author contact information
-- **Issues**: Please open an issue on GitHub
-- **Discussions**: Join the [GitHub Discussions](../../discussions)
-
-## 🙏 Acknowledgments
-
-This work builds upon insights from Dynamic Cheatsheet and incorporates ideas from the broader LLM agent and context optimization research community.
-
-## 📚 Additional Resources
-
-- **Blog Posts**: 
-  - [Medium: Agentic Context Engineering](https://medium.com/@bingqian/agentic-context-engineering-teaching-language-models-to-learn-from-experience-706c31a872ca)
-  - [MarkTechPost Coverage](https://www.marktechpost.com/2025/10/10/agentic-context-engineering-ace-self-improving-llms-via-evolving-contexts-not-fine-tuning/)
-  - [InfoQ Article](https://www.infoq.com/news/2025/10/agentic-context-eng/)
-
----
-
-<div align="center">
 
 **⭐ Star us on GitHub if ACE helps your research!**
 
