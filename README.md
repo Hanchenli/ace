@@ -243,7 +243,7 @@ Each bullet has:
 - **Counts**: `helpful=X harmful=Y` updated by Reflector
 - **Content**: `:: actual advice or strategy`
 
-## 🎓 Key Innovations
+<!-- ## 🎓 Key Innovations
 
 ### 1. Incremental Delta Updates
 
@@ -255,14 +255,12 @@ A mechanism that balances steady context expansion with redundancy management by
 
 ### 3. Dedicated Reflector
 
-A specialized Reflector that separates evaluation and insight extraction from curation, improving context quality and downstream performance.
+A specialized Reflector that separates evaluation and insight extraction from curation, improving context quality and downstream performance. -->
 
-## 📬 Supported Tasks
-
-### Agent Tasks
+### 📬 Supported Tasks
+#### Agent Tasks
 - **AppWorld**: Simulated digital environment with app interactions
-
-### Domain-Specific Tasks
+#### Domain-Specific Tasks
 - **FiNER**: Financial information extraction
 - **XBRL Formula**: Structured financial data processing
 
