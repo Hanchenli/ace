@@ -3,5 +3,4 @@
 .env
 __pycache__/
 */__pycache__/
-eval/finance/data/
 results/
