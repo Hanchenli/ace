@@ -22,6 +22,10 @@ ACE (Agentic Context Engineering) is a framework that enables large language mod
 - 🚀 **High Efficiency**: 86.9% lower adaptation latency on average compared to existing adaptive methods
 - 💰 **Cost Effective**: Significantly fewer rollouts and lower dollar costs while achieving higher accuracy
 
+### Tutorials
+- 📚 **Adding Dataset for Evaluation** [Link](tutorials/ExtendingDatasets.md)
+- ✨ **Extending ACE for Tool Calling** (Coming Soon) 
+
 ## 📊 Performance
 
 ACE consistently outperforms strong baselines, achieving average gains of **+10.6%** on agent tasks and **+8.6%** on domain-specific benchmarks, across both offline and online adaptation settings.
