@@ -2,7 +2,24 @@
 
 <div align="left">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2510.04618-b31b1b.svg)](https://arxiv.org/abs/2510.04618)
+<p align="left" style="display:flex; gap:18px;">
+  <a href="https://arxiv.org/abs/2510.04618" target="_blank" style="margin-right:0;">
+    <img alt="arXiv" src="https://img.shields.io/badge/arXiv-2510.04618-b31b1b.svg">
+  </a>
+  <a href="https://join.slack.com/t/ace-agent/shared_invite/zt-3np7gusuf-DCUJaBshNjuAz5ECDx702w" target="_blank" style="margin-right:0;">
+    <img alt="Slack" src="https://img.shields.io/badge/Join Slack-4A154B?logo=slack&logoColor=white">
+  </a>
+  <a href="https://discord.gg/NW2W4xYt" target="_blank" style="margin-right:0;">
+    <img alt="Discord" src="https://img.shields.io/badge/Discord-7289DA?logo=discord&logoColor=white">
+  </a>
+  <a href="https://deepwiki.com/ace-agent/ace" target="_blank" style="margin-right:0;">
+    <img alt="Ask DeepWiki" src="https://deepwiki.com/badge.svg">
+  </a>
+  <a href="https://forms.gle/ZNJpqVBRa8QoPjzM7" target="_blank" style="margin-right:0;">
+    <img alt="Feedback & Interest Form" src="https://img.shields.io/badge/Feedback & Interest Form-4285F4?logo=googleforms&logoColor=white">
+  </a>
+</p>
+
 
 <img src="assets/images/ace_framework.png" alt="ACE Framework" width="800"/>
 
