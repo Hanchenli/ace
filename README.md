@@ -337,7 +337,6 @@ For questions and feedback:
 
 ---
 
-<div align="center">
 
 ## 📝 Citation
 
@@ -354,6 +353,8 @@ If you use ACE in your research, please cite our paper:
       url={https://arxiv.org/abs/2510.04618}, 
 }
 ```
+
+<div align="center">
 
 **⭐ Star us on GitHub if ACE helps your research!**
 
